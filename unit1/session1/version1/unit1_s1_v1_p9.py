@@ -15,4 +15,4 @@ item_quantities = [1, 2, 3, 4]
 print(can_pair(item_quantities))
 
 item_quantities = []
-print(can_pair(i
+print(can_pair(item_quantities))

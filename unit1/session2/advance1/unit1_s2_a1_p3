@@ -1,0 +1,12 @@
+def remove_dupes(items):
+    start = 0
+
+    for i in range(1,len(items)):
+        if items[i] != items[start]:
+            start+= 1
+            items[start] = items[i]
+
+    return start + 1
+        
+items = ["extract of malt", "haycorns", "honey", "thistle", "thistle"]
+print(remove_dupes(items))

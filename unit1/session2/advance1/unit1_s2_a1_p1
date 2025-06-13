@@ -1,0 +1,23 @@
+from pprint import pprint
+
+def transpose(matrix):
+    res = []
+
+    for i in range(len(matrix[0])):
+        res.append([])
+    pprint(res)
+
+    for row in range(len(matrix)):
+        for num in range(len(matrix[0])):
+            res[num].append(matrix[row][num])
+
+
+    pprint(res)
+
+#columns become rows/lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+transpose(matrix)
