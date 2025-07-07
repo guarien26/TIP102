@@ -1,0 +1,38 @@
+def find_duplicate_chests(chests):
+    dct = {}
+    duplicate_chests = []
+
+    for num in chests:
+        if num in dct:
+            duplicate_chests.append(num)
+        else:
+            dct[num] = 1
+    
+    return duplicate_chests
+
+
+"""
+Inputs:
+chests -> array of integers
+
+Outputs:
+duplicate_chests -> array of numbers that appear twice
+
+Constraints:
+array has to contain integers
+
+Edge Cases:
+list could be empty
+
+time_complexity: O(n)
+space_complexity: O(n/2)
+"""
+
+
+chests1 = [4, 3, 2, 7, 8, 2, 3, 1]
+chests2 = [1, 1, 2]
+chests3 = [1]
+
+print(find_duplicate_chests(chests1))
+print(find_duplicate_chests(chests2))
+print(find_duplicate_chests(chests3))
