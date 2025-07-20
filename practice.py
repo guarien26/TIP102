@@ -1,35 +1,14 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# values = [0,1,2,50,52,75]
 
-def is_palindrome(head):
-    # Step 1: Find the middle of the list (use slow and fast pointers)
-    slow = head
-    fast = head
-    while fast and fast.next:
-        slow = slow.next
-        fast = fast.next.next
+# res = ""
 
-    # Step 2: Reverse the second half of the list
-    def reverse_list(node):
-        prev = None
-        curr = node
+# for i in range(len(values) - 2):
+#     if values[i+1] == values[i] + 1:
+#         res += res + str(values[i])
+#     else:
 
-        while curr:
-            curr.next = prev
-            prev = curr
-            curr = curr.next
-        return prev
 
-    second_half = reverse_list(slow)
 
-    # Step 3: Compare the first and second halves
-    first_half = head
-    while second_half:
-        if first_half.val != second_half.val:
-            return False
-        first_half = first_half.next
-        second_half = second_half.next
 
-    return True
+
+
