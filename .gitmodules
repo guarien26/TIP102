@@ -1,0 +1,3 @@
+[submodule "python-tutoring"]
+	path = python-tutoring
+	url = https://github.com/guarien26/python-tutoring.git
